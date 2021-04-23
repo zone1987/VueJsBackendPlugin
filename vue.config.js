@@ -1,4 +1,3 @@
-const path = require('path');
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
@@ -31,8 +30,8 @@ module.exports = {
         {
           patterns: [
             {
-              from: path.join(__dirname, 'Resources/views/backend/whatever_vue_js/src/assets'),
-              to: path.join(__dirname, 'Resources/views/backend/_resources')
+              from: 'Resources/views/backend/whatever_vue_js/src/assets/',
+              to: ''
             }
           ]
         }

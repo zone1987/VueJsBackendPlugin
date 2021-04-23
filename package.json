@@ -17,7 +17,7 @@
     "@vue/cli-plugin-vuex": "^4.5.11",
     "@vue/cli-service": "^4.5.11",
     "axios": "^0.21.1",
-    "copy-webpack-plugin": "^8.1.1",
+    "copy-webpack-plugin": "^6.3.2",
     "css-loader": "^5.0.2",
     "node-sass": "^5.0.0",
     "sass": "^1.32.8",
