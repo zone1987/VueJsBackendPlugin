@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="schema/menu.xsd">
+
+    <entries>
+        <entry>
+            <name>VueJsApplication</name>
+            <label lang="en">Vue Js Application</label>
+            <label lang="de">Vue Js Application</label>
+            <controller>WhateverVueJs</controller>
+            <action>index</action>
+            <class>sprite-application--arrow</class>
+            <parent identifiedBy="controller">ConfigurationMenu</parent>
+            <onclick>Shopware.ModuleManager.createSimplifiedModule("WhateverVueJs", { "title": "Vue Js Application", minHeight: 750, height: 750  })</onclick>
+        </entry>
+    </entries>
+</menu>

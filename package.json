@@ -1,0 +1,31 @@
+{
+  "name": "sw5-vuejs-backend-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build  --no-clean",
+    "test:e2e": "vue-cli-service test:e2e",
+    "watch": "vue-cli-service serve --watch"
+  },
+  "author": "Andreas Gerhardt <a.gerhardt1987@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@vue/cli-plugin-e2e-cypress": "^4.5.11",
+    "@vue/cli-plugin-router": "^4.5.11",
+    "@vue/cli-plugin-vuex": "^4.5.11",
+    "@vue/cli-service": "^4.5.11",
+    "axios": "^0.21.1",
+    "copy-webpack-plugin": "^8.1.1",
+    "css-loader": "^5.0.2",
+    "node-sass": "^5.0.0",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.1.1",
+    "vue": "^2.6.12",
+    "vue-axios": "^3.2.4",
+    "vue-router": "^3.5.1",
+    "vue-template-compiler": "^2.6.12",
+    "vuex": "^3.6.2"
+  }
+}

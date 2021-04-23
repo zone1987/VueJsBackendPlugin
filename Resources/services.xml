@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<container
+        xmlns="http://symfony.com/schema/dic/services"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://symfony.com/schema/dic/services
+        https://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter type="string" key="vue_js_backend_plugin.template_path">/Resources/views/</parameter>
+    </parameters>
+
+    <services>
+        <service id="vue_js_backend_plugin.subscriber.controller_subscriber" class="VueJsBackendPlugin\Subscriber\ControllerSubscriber">
+            <argument>%vue_js_backend_plugin.plugin_dir%</argument>
+            <tag name="shopware.event_subscriber"/>
+        </service>
+
+        <service id="vue_js_backend_plugin.subscriber.route_subscriber" class="VueJsBackendPlugin\Subscriber\RouteSubscriber">
+            <argument>%vue_js_backend_plugin.plugin_dir%</argument>
+            <argument>%vue_js_backend_plugin.template_path%</argument>
+            <tag name="shopware.event_subscriber"/>
+        </service>
+    </services>
+
+</container>
